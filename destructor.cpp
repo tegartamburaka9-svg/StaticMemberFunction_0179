@@ -13,10 +13,18 @@ public:
     void isiData();
 };
 
-/ Definisi Constructor
+//Definisi Constructor
 angka::angka(int i) { // Constructor
     panjang = i;
     arr = new int[i];
     isiData();
+}
+
+// Definisi Destructor
+angka::~angka() { // Destructor
+    cout << endl;
+    cetakData();
+    delete[] arr; // Membersihkan alokasi array
+    cout << "Alamat Array Sudah Dilepaskan" << endl;
 }
 
