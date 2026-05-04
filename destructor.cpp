@@ -42,3 +42,13 @@ void angka::isiData() {
     cout << endl;
 }
 
+int main() {
+    // Objek lokal (stack) - Destructor otomatis dipanggil di akhir scope
+    angka belajarcpp(3); // Constructor Dipanggil
+
+    // Objek dinamis (heap) - Destructor dipanggil saat keyword delete digunakan
+    angka *ptrBelajarcpp = new angka(5); // Constructor Dipanggil
+    delete ptrBelajarcpp; // Destructor Dipanggil
+
+    return 0;
+}
