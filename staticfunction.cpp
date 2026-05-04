@@ -12,4 +12,17 @@ public:
     void setID();
     void printAll();
 
-}
+   //pembuatan static function
+    static void setNim(int pnim) {
+        nim = pnim;
+    }
+
+    static int getNim() {
+        return nim;
+    }
+
+    Mahasiswa(string pnama) : nama(pnama) {
+        setID();
+    }
+};
+
