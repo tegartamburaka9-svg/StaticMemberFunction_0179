@@ -19,7 +19,7 @@ int main() {
     buku bukunya;
 
     // Contoh chain function call
-    cout << bukunya.setJudul("Matematika").getJudul() << endl;
+    cout << bukunya.setJudul("Ipa").getJudul() << endl;
 
     return 0;
 }
